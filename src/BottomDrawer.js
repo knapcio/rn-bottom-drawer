@@ -142,7 +142,7 @@ export default class BottomDrawer extends Component {
         onDrawerStateSet={(state) => this.setDrawerState(state)}
       >
         {this.props.children}
-
+        <View style={{ height: Math.sqrt(SCREEN_HEIGHT), backgroundColor: this.props.backgroundColor }} />
       </Animator>
     )
   }
